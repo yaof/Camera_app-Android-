@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical" >
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:scrollbars="vertical" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+            <ImageView
+                    android:onClick="SetBackgroundHandler"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/parking_logo" />
+            <EditText
+                    android:id="@+id/login_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/login_input"
+                    android:drawablePadding="25dip"
+                    android:hint="Camera ID"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textColor="#ff98bede"
+                    android:textColorHint="#ffdddddd" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:orientation="horizontal" >
+                <Button
+                        android:onClick="loginHandler"
+                        android:id="@+id/login_activity_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/login_btn"
+                        android:shadowColor="#7f000000"
+                        android:shadowDx="0.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="Login"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:enabled="true"/>
+                <Button
+                    android:onClick="logindemoHandler"
+                    android:id="@+id/login_activity_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/login_btn"
+                    android:shadowColor="#7f000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="Login(demo)"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:enabled="true"/>
+            </LinearLayout>
+            <EditText
+                    android:id="@+id/register_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:background="@drawable/login_input"
+                    android:drawablePadding="25dip"
+                    android:hint="Camera ID"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textColor="#ff98bede"
+                    android:textColorHint="#ffdddddd"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="16dip"/>
+            <EditText
+                    android:id="@+id/register_parking"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/login_input"
+                    android:drawablePadding="25dip"
+                    android:hint="Parking lot name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dip"
+                    android:textColor="#ff98bede"
+                    android:textColorHint="#ffdddddd" />
+            <EditText
+                    android:id="@+id/register_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/login_input"
+                    android:drawablePadding="25dip"
+                    android:hint="Number of parking spaces"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textColor="#ff98bede"
+                    android:textColorHint="#ffdddddd" />
+
+            <Button
+                    android:onClick="registerHandler"
+                    android:id="@+id/login_activity_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/register_btn"
+                    android:shadowColor="#7f000000"
+                    android:shadowDx="0.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="Register"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:enabled="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

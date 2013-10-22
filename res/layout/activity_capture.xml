@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context=".MainActivity">
+
+    <FrameLayout
+            android:layout_width="400dip"
+            android:layout_height="200dip"
+            android:layout_marginTop="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/frameLayout">
+    </FrameLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/show_id"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/show_lot"
+            android:layout_below="@+id/show_id"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/show_index"
+            android:layout_below="@+id/show_lot"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:onClick="finishHandler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/show_info"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:onClick="goHandler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take"
+            android:id="@+id/go"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    <Button
+            android:onClick="continueHandler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Sample"
+            android:id="@+id/con"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>
